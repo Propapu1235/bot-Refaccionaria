@@ -1,3 +1,4 @@
 node.modules/
+.wwebjs_cache/
 .wwebjs_auth/
 *.xlsx

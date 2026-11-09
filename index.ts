@@ -12,7 +12,8 @@ console.log(`✅ Base de datos cargada: ${data.length} productos listos.`);
 const client = new Client({
     authStrategy: new LocalAuth(),
     puppeteer: {
-        executablePath: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe',
+        //Estos argumentos son obligatorios para que Chromium corra en servidores Linux sin entorno gráfico
+        args: ['--no-sandbox', '--disable-setuid-sandbox']
     }
 });
 
